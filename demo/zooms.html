@@ -18,7 +18,7 @@
         }
 
         .portrait {
-            width: 300px;
+            width: 500px;
             height: 100vh;
             overflow: hidden;
             border: red 1px solid;
@@ -87,7 +87,11 @@
 <script type="text/javascript">
     // new window.PinchZoom.default(document.querySelector('div.zoom1'), { verticalPadding:20, horizontalPadding: 30 });
     // new window.PinchZoom.default(document.querySelector('div.zoom2'), {});
-    new window.PinchZoom.default(document.querySelector('div.zoom3'), {minZoom: 0.8, maxZoom:10});
+    new window.PinchZoom.default(document.querySelector('div.zoom3'), {
+        minZoom: 0.8, 
+        maxZoom:10,
+        lockDragAxis:true
+    });
     // new window.PinchZoom.default(document.querySelector('div.zoom4'), {});
     // new window.PinchZoom.default(document.querySelector('div.zoom5'), {});
 </script>
