@@ -16,10 +16,10 @@
 
         .portrait {
             width: 300px;
-            height: 500px;
+            height: 100vh;
             overflow: hidden;
             border: red 1px solid;
-            margin: 1em;
+            /* margin: 1em; */
             float: left;
         }
 
@@ -41,7 +41,7 @@
 <body>
 
 
-<div class="ll landscape">
+<!-- <div class="ll landscape">
     <div class="zoom1">
         <img src="kitten-wide.jpg"/>
         <p>should also zoom</p>
@@ -53,17 +53,22 @@
         <img src="kitten-tall.jpg"/>
         <p>should also zoom</p>
     </div>
-</div>
+</div> -->
 
 <div class="pl portrait">
     <div class="zoom3">
         <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
         <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
         <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
+        <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
+        <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
+        <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
+        <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
+        <img src="kitten-wide.jpg"/ style="margin: 10px 0;">
     </div>
 </div>
 
-<div class="pp portrait">
+<!-- <div class="pp portrait">
     <div class="zoom4">
         <img src="kitten-tall.jpg"/>
         <p>should also zoom</p>
@@ -75,14 +80,14 @@
         <img src="kitten-wide.jpg"/>
         <p>should also zoom</p>
     </div>
-</div>
+</div> -->
 
 <script type="text/javascript">
-    new window.PinchZoom.default(document.querySelector('div.zoom1'), { verticalPadding:20, horizontalPadding: 30 });
-    new window.PinchZoom.default(document.querySelector('div.zoom2'), {});
-    new window.PinchZoom.default(document.querySelector('div.zoom3'), {minZoom: .5,});
-    new window.PinchZoom.default(document.querySelector('div.zoom4'), {});
-    new window.PinchZoom.default(document.querySelector('div.zoom5'), {});
+    // new window.PinchZoom.default(document.querySelector('div.zoom1'), { verticalPadding:20, horizontalPadding: 30 });
+    // new window.PinchZoom.default(document.querySelector('div.zoom2'), {});
+    new window.PinchZoom.default(document.querySelector('div.zoom3'), {minZoom: 0.8,});
+    // new window.PinchZoom.default(document.querySelector('div.zoom4'), {});
+    // new window.PinchZoom.default(document.querySelector('div.zoom5'), {});
 </script>
 
 </body>
