@@ -529,7 +529,6 @@
             getInitialZoomFactor: function getInitialZoomFactor() {
                 var xZoomFactor = this.container.offsetWidth / this.el.offsetWidth;
                 var yZoomFactor = this.container.offsetHeight / this.el.offsetHeight;
-                console.log(xZoomFactor,yZoomFactor)
 
                 return Math.min(xZoomFactor, yZoomFactor);
             },
@@ -666,7 +665,7 @@
                 this.el.style.oTransformOrigin = '0% 0%';
                 this.el.style.transformOrigin = '0% 0%';
 
-                this.el.style.position = 'absolute';
+                // this.el.style.position = 'absolute';
             },
 
             end: function end() {
@@ -718,7 +717,6 @@
                         offsetX = -this.offset.x / zoomFactor,
                         offsetY = -this.offset.y / zoomFactor,
                         transform3d = 'scale3d(' + zoomFactor + ', ' + zoomFactor + ',1) ' + 'translate3d(' + offsetX + 'px,' + offsetY + 'px,0px)',
-                        transform2d = 'scale(' + zoomFactor + ', ' + zoomFactor + ') ' + 'translate(' + offsetX + 'px,' + offsetY + 'px)',
                         // transform2d = 'scale(' + zoomFactor + ', ' + zoomFactor + ') ' + 'translate(' + offsetX + 'px,' + offsetY + 'px)',
                         removeClone = function () {
                         if (this.clone) {
@@ -726,7 +724,6 @@
                             delete this.clone;
                         }
                     }.bind(this);
-                    console.log()
 
                     // Scale 3d and translate3d are faster (at least on ios)
                     // but they also reduce the quality.
