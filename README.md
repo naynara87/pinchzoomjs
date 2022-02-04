@@ -1,6 +1,8 @@
 # PinchZoom.js
 
 PinchZoom은 모든 DOM 요소에서 확대/축소 및 끌기를 위한 멀티 터치 제스처를 제공하는 Javascript 라이브러리입니다.
+미리보기 (https://naynara87.github.io/pinchzoomjs/demo/zooms.html)
+
 
 ## Installation
 
@@ -37,10 +39,10 @@ draggableUnzoomed:  이미지가 확대/축소되지 않은 경우에도 드래�
 lockDragAxis:       단일 축으로 요소의 이동을 잠급니다. (default false)
 setOffsetsOnce:     오프셋(컨테이너 내부 이미지 위치)을 한 번만 계산합니다. (기본값은 거짓)
                     ('true'를 사용하면 연속적인 'load' 및 'resize'에서 오프셋을 유지합니다)
-use2d:              Fall back to 2D transforms when idle. (default true)
-                    (a truthy value will still use 3D transforms during animation)
-verticalPadding:    Vertical padding to apply around the image. (default 0)
-horizontalPadding:  Horizontal padding to apply around the image. (default 0)
+use2d:              유휴 상태일 때 2D 변환으로 폴백합니다. (default true)
+                    (진실 값은 애니메이션 중에 3D 변환을 계속 사용합니다.)
+verticalPadding:    이미지 주위에 적용할 수직 패딩입니다. (default 0)
+horizontalPadding:  이미지 주위에 적용할 수평 패딩입니다. (default 0)
 
 onZoomStart:        Callback for zoomstart event (params: Pinchzoom object, Event event) (default null)
 onZoomEnd:          Callback for zoomend event (params: Pinchzoom object, Event event) (default null)
@@ -109,8 +111,8 @@ _(if need be, the event names can be customized via `options`)_
 
 ## Troubleshooting
 
-- If you have issues with invisible images, make sure that the image isn't absolutely positioned.
-  In some cases that will cause trouble.
+- 보이지 않는 이미지에 문제가 있는 경우 이미지가 절대 위치에 있지 않은지 확인하십시오.
+  어떤 경우에는 문제를 일으킬 것입니다.
 
 ## License
 
